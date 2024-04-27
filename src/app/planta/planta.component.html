@@ -1,0 +1,47 @@
+<div class="content container-fluid">
+  <h1 class="bold-shadow">Vivero el Otoño</h1>
+  <div class="divider"></div>
+  <img class="col-12" src="../../assets/banner.png" alt="banner"/>
+  
+  <div class="divider"></div>
+  <div class="col-8">
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th class="head">#</th>
+          <th class="head">Nombre común</th>
+          <th class="head">Tipo</th>
+          <th class="head">Clima</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of plantas">
+          <td>
+            <b class="text-row-bold-shadow">{{p.id}}</b>
+          </td>
+          <td>
+            <dd class="text-row-shadow">{{p.nombreComun}}</dd>
+          </td>
+          <td>
+            <dd class="text-row-shadow">{{p.tipo}}</dd>
+          </td>
+          <td>
+            <dd class="text-row-shadow">{{p.clima}}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size: 20px;">
+      Total de plantas interior: {{getInterior()}}
+      <br>
+      Total de plantas exterior: {{getExterior()}}
+    </p>
+  </div>
+  <div class="col-12">
+    <div class="row justify-content-center">
+      <div class="text-center">
+       <p class="bold-text">Contact us: +57 3102105253 - info&#64;viveroelotonio.com - &#64;viveroelotonio</p>   
+     </div>
+   </div>
+  </div>
+</div>
